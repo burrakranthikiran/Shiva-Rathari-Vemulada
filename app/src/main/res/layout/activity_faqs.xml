@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loct_bc"
+    tools:context=".Faqs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar_bodypart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:background="@color/white_opaque"
+        tools:ignore="MissingConstraints,ObsoleteLayoutParam">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:id="@+id/iv_back_app_info"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:src="@drawable/green_back_arrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ's"
+                android:textSize="20sp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/good_green"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar_bodypart">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/hello"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. What are the temple’s hours of operation?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/world"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. The temple's hours of operation vary depending on the festivals and ceremonies taking place. Please contact the temple for the most up to date information."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/good_green"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/two_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: Is there a dress code for the temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Yes, visitors are expected to dress modestly and respectfully when visiting the temple. Please avoid wearing shorts and any clothing with offensive words or images."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/good_green"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/three_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: Are there any guidelines for taking photos inside the temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/three_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Yes. Please be respectful of the sanctity of the temple and refrain from taking photos of any religious images or artifacts. "
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/good_green"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/four_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: Is there a fee to visit the temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/four_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: No, there is no fee to visit the temple. Donations to help maintain the temple are always appreciated. "
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/five_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: Are there any special ceremonies or festivals taking place at the temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/five_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Yes, the temple hosts a variety of special ceremonies and festivals throughout the year. Please contact the temple for more information.(9491000743)"
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/six_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: What are the main attractions of Vemulawada?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/six_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Vemulawada is home to the famous Sri Raja Rajeshwara Swamy Temple, which is one of the most revered temples in India. The temple is known for its intricate architecture and is visited by thousands of devotees every year. Other attractions include the nearby Anjaneya Swamy Temple. "
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/seven_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: Is there any accommodation available near Vemulawada?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seven_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Yes,  there  are few temple darmashala’s  situated around the temple, few private hotels and guest houses located near the temple. You can book your accommodation in advance through T-App folio or Meeseva portal and  upon arrival."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/eight_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: How can I reach Vemulawada?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/eight_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: Vemulawada is well connected with the major cities of Andhra Pradesh by road. The nearest railway station is Karimnagar, which is approximately 35 km away. The nearest airport is Hyderabad International Airport, which is approximately 150 km away."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/nine_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q: What are the timings of the Sri Raja Rajeshwara Swamy Temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nine_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A: The temple is open from 5:00 AM to 10:00 PM on all days of the week."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/ten_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. What are the nearby tourist attractions?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ten_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. Nearby tourist attractions include the Bhadrakali temple, Kotilingala, Dharmapuri, and Warangal Fort."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/eleven_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. How far is Vemulawada from Hyderabad?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/eleven_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. Vemulawada is located at a distance of approximately 140 kilometers from Hyderabad."
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/twelve_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. Is there any free distribution of AnnaPrasadam available?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twelve_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. Yes. At nithyannadana satram Vemulawada. "
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/thirteen_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. Is there any free distribution of food on Jathara days ?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/thirteen_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. Yes,  at Gudicheruvu Parking place, Laxmiganapathi Darmashala"
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout android:orientation="vertical"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/fourteen_q"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="Q. Is there any free bus available from bus stand to Temple?"
+                            android:gravity="center|left"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="@color/pitch_black"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourteen_a"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="A. Yes, from Thippapur Bus stand to main  Temple with frequency of 2 trips per half an hour. "
+                            android:gravity="center|left"
+                            android:padding="10dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/pitch_black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
